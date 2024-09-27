@@ -1,0 +1,43 @@
+:root {
+    --pico-font-size: 80%;
+}
+
+textarea,
+pre {
+    font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+    font-size: 100%;
+}
+
+textarea {
+    min-height: 200px;
+}
+
+pre#markupy {
+    position: relative;
+    height: auto;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    border: 1px solid var(--pico-form-element-border-color);
+    margin-bottom: var(--pico-spacing);
+    padding: var(--pico-form-element-spacing-vertical) var(--pico-form-element-spacing-horizontal);
+}
+
+pre[class*="language-"],
+code[class*="language-"] {
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    background: var(--pico-code-background-color);
+}
+
+code {
+    height: 200px;
+    min-height: 100%;
+}
+
+button[type=submit] {
+    font-size: 110%;
+    font-weight: bold;
+}

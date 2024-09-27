@@ -1,0 +1,12 @@
+[project]
+name = "html2markupy"
+version = "0.9.0"
+description = "Online HTML to markupy converter"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "flask>=3.0.3",
+    "black>=24.8.0",
+    "gunicorn>=23.0.0",
+    "markupy>=0.9.4",
+]
