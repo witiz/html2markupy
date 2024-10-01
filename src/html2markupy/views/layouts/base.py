@@ -1,8 +1,6 @@
-from typing import override
-
 from flask import url_for
-
-from markupy import Node, View
+from markupsafe import Markup
+from markupy import Component, Node
 from markupy import __version__ as markupy_version
 from markupy.tag import (
     H1,
@@ -26,8 +24,7 @@ from markupy.tag import (
 )
 
 
-class BaseLayout(View):
-    @override
+class BaseLayout(Component):
     def render(self) -> Node:
         return Html[
             Head[
@@ -56,6 +53,18 @@ class BaseLayout(View):
                         filename="vendor/prismjs-1.29.0/prism.js",
                     )
                 ),
+                Script(
+                    async_=True,
+                    src="https://www.googletagmanager.com/gtag/js?id=G-VP8ZZRV4WR",
+                ),
+                Script[
+                    Markup("""
+                    window.dataLayer = window.dataLayer || [];
+                    function gtag(){dataLayer.push(arguments);}
+                    gtag('js', new Date());
+                    gtag('config', 'G-VP8ZZRV4WR');
+                    """)
+                ],
             ],
             Body[
                 Header(".container")[self.header()],
