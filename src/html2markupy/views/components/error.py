@@ -3,7 +3,7 @@ from markupy.tag import Span
 
 
 class ErrorComponent(Component):
-    def __init__(self, message: str) -> None:
+    def __init__(self, *, message: str) -> None:
         self.message = message
 
     def render(self) -> Node:

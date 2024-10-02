@@ -26,7 +26,7 @@ def convert():
             html_str, use_selector=use_selector, use_import_tag=use_import_tag
         )
     except Exception as e:
-        return ErrorComponent(str(e))
+        return ErrorComponent(message=str(e))
     else:
         if format_output:
             try:
