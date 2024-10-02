@@ -139,15 +139,15 @@ wheels = [
 
 [[package]]
 name = "markupy"
-version = "0.9.5"
+version = "1.0.0"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "markupsafe" },
     { name = "typing-extensions" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/33/c1/2dda60a8edf8f9d4e63e34f07c514dd9c5a389caf90ef32767b10a21ed58/markupy-0.9.5.tar.gz", hash = "sha256:55f9b7a22d2be61324ece86940494f02dcf2b2f7e709e42237c1e61562072bcb", size = 60271 }
+sdist = { url = "https://files.pythonhosted.org/packages/7a/61/5e5cd6d5e55647839847b9f8cc6b58c7be3b3e88e83787ea4d12a4a8e9b9/markupy-1.0.0.tar.gz", hash = "sha256:f098c81377d0b31f471ade7b30c2730643a22c54678d48eef80ab392b2401d48", size = 66390 }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/42/64/c6d05e7bdc107b459c785699678ca01b6afced9bfeb141b33f6e429df523/markupy-0.9.5-py3-none-any.whl", hash = "sha256:9bd77593607c86471cefab91dcd534853e9a659d519f37674e4198ca8eed8613", size = 13349 },
+    { url = "https://files.pythonhosted.org/packages/5a/84/4c2581849b94307e3b84f754106a1803fcd80ed559d40810b153eb0f17c8/markupy-1.0.0-py3-none-any.whl", hash = "sha256:9b04e2206f07f6a38dd57a7e7344f41674bfc995d4de722c1f8df2f563c8db66", size = 13382 },
 ]
 
 [[package]]
