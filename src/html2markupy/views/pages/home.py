@@ -3,6 +3,7 @@ from typing import override
 from flask import url_for
 from markupy import Node
 from markupy.tag import (
+    A,
     Button,
     Div,
     Fieldset,
@@ -47,7 +48,11 @@ class HomePage(BaseLayout):
                     "html2markupy allows you to experiment with the markupy syntax, and will help you translate existing HTML snippets if you decide to migrate."
                 ],
                 P[
-                    "The conversion is actually performed by the markupy library itself which provides a html2markupy command line tool that you can run in a terminal."
+                    "The conversion is actually performed by the markupy library itself which also provides a ",
+                    A(href="https://markupy.witiz.com/html2markupy", target="_blank")[
+                        "html2markupy command line tool"
+                    ],
+                    " that you can run in a terminal.",
                 ],
             ],
             Form(

@@ -1,6 +1,5 @@
 import black
 from flask import request
-
 from markupy import html2markupy
 
 from .flask import MarkupyFlask

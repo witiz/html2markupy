@@ -80,11 +80,7 @@ class BaseLayout(Component):
                 P["Convert HTML to markupy"],
             ],
             Ul[
-                Li[
-                    A(href="https://github.com/witiz/markupy", target="_blank")[
-                        "markupy on Github"
-                    ]
-                ],
+                Li[A(href="https://markupy.witiz.com", target="_blank")["markupy"]],
                 Li[
                     A(href="https://github.com/witiz/html2markupy", target="_blank")[
                         "view source"
