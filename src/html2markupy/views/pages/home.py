@@ -88,6 +88,10 @@ class HomePage(BaseLayout):
                             "Use selector syntax for id/class attributes",
                         ],
                         Label[
+                            Input(type="checkbox", name="attr", checked=True),
+                            "Use argument style attributes instead of dictionary",
+                        ],
+                        Label[
                             Input(type="checkbox", name="import", checked=True),
                             "Use individual tag imports",
                         ],
