@@ -1,11 +1,11 @@
 from flask import Flask
-from markupy import Component
+from markupy import View
 
 
 class MarkupyFlask(Flask):
     # Here we override make_response to be able to return Component instances
     # from our routes directly without having to cast them to str()
     def make_response(self, rv):
-        if isinstance(rv, Component):
+        if isinstance(rv, View):
             rv = str(rv)
         return super().make_response(rv)
