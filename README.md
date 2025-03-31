@@ -29,5 +29,5 @@ $ uv run flask run
 ### Run with docker
 
 ```sh
-$ docker compose up
+$ docker compose up --build
 ```

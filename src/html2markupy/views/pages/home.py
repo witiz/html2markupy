@@ -1,7 +1,7 @@
 from typing import override
 
 from flask import url_for
-from markupy import Node
+from markupy import Fragment, View
 from markupy.tag import (
     A,
     Button,
@@ -41,8 +41,8 @@ default_html = """
 
 class HomePage(BaseLayout):
     @override
-    def main(self) -> Node:
-        return [
+    def main(self) -> View:
+        return Fragment[
             Section[
                 P[
                     "html2markupy allows you to experiment with the markupy syntax, and will help you translate existing HTML snippets if you decide to migrate."

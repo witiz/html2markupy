@@ -1,6 +1,6 @@
 from flask import url_for
 from markupsafe import Markup
-from markupy import Component, Node
+from markupy import Component, View
 from markupy import __version__ as markupy_version
 from markupy.tag import (
     H1,
@@ -25,7 +25,7 @@ from markupy.tag import (
 
 
 class BaseLayout(Component):
-    def render(self) -> Node:
+    def render(self) -> View:
         return Html[
             Head[
                 Meta(charset="utf8"),
@@ -73,7 +73,7 @@ class BaseLayout(Component):
             ],
         ]
 
-    def header(self) -> Node:
+    def header(self) -> View:
         return Nav[
             Hgroup[
                 H1["html2markupy"],
@@ -89,10 +89,9 @@ class BaseLayout(Component):
             ],
         ]
 
-    def main(self) -> Node:
-        return None
+    def main(self) -> View: ...
 
-    def footer(self) -> Node:
+    def footer(self) -> View:
         return Small[
             "Powered by ",
             A(href="https://github.com/witiz/markupy", target="_blank")[

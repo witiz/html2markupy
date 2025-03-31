@@ -1,4 +1,5 @@
 import black
+from black.parsing import InvalidInput as BlackInvalidInput
 from flask import request
 from markupy import html2markupy
 
@@ -10,12 +11,12 @@ from .views.pages.home import HomePage
 app = MarkupyFlask(__name__)
 
 
-@app.route("/")
+@app.route("/")  # type: ignore
 def home():
     return HomePage()
 
 
-@app.route("/convert", methods=["POST"])
+@app.route("/convert", methods=["POST"])  # type: ignore
 def convert():
     html_str = request.form["html"]
     format_output = bool(request.form.get("format"))
@@ -35,7 +36,7 @@ def convert():
         if format_output:
             try:
                 markupy_str = black.format_str(markupy_str, mode=black.Mode())
-            except black.parsing.InvalidInput:
+            except BlackInvalidInput:
                 pass
 
     return CodeComponent(code=markupy_str)
