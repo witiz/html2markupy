@@ -164,15 +164,15 @@ wheels = [
 
 [[package]]
 name = "markupy"
-version = "1.2.0"
+version = "1.2.1"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "markupsafe" },
     { name = "typing-extensions" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/4e/3e/b8b427a2a219bc1cb7b8c578d530e6f9ef1d5a83bb0a9c8c4a72f3aa15f0/markupy-1.2.0.tar.gz", hash = "sha256:9683ec337d40c7e6f10ff23038d5099bc73954eab477c772b952c2263295cf3b", size = 69251 }
+sdist = { url = "https://files.pythonhosted.org/packages/e0/c5/3af12e7e687430cc6f8ed1bc7cc87088ac68a02a23ed6704fbcd26026070/markupy-1.2.1.tar.gz", hash = "sha256:64776684a3621fc9ad1511203b9630160f96156e200c5b49826621cbd97b6143", size = 69828 }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/0d/62/51848204e0d6218a31559d788cd7a121a4891c45c3128362c01f7e7999df/markupy-1.2.0-py3-none-any.whl", hash = "sha256:b9e570139b59f7ba5c57ce57475117a85e5226490252dc4223ab360f08d26ccd", size = 15166 },
+    { url = "https://files.pythonhosted.org/packages/3a/ec/f0aed3c1850aa83ff8f592580435bed8297a45c3babf88462ca28635928c/markupy-1.2.1-py3-none-any.whl", hash = "sha256:373c8347782558d0f7fddae012cbf4acccd08b3ead727b5d02a981ae668f0119", size = 15414 },
 ]
 
 [[package]]
@@ -213,11 +213,11 @@ wheels = [
 
 [[package]]
 name = "typing-extensions"
-version = "4.13.0"
+version = "4.13.1"
 source = { registry = "https://pypi.org/simple" }
-sdist = { url = "https://files.pythonhosted.org/packages/0e/3e/b00a62db91a83fff600de219b6ea9908e6918664899a2d85db222f4fbf19/typing_extensions-4.13.0.tar.gz", hash = "sha256:0a4ac55a5820789d87e297727d229866c9650f6521b64206413c4fbada24d95b", size = 106520 }
+sdist = { url = "https://files.pythonhosted.org/packages/76/ad/cd3e3465232ec2416ae9b983f27b9e94dc8171d56ac99b345319a9475967/typing_extensions-4.13.1.tar.gz", hash = "sha256:98795af00fb9640edec5b8e31fc647597b4691f099ad75f469a2616be1a76dff", size = 106633 }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/e0/86/39b65d676ec5732de17b7e3c476e45bb80ec64eb50737a8dce1a4178aba1/typing_extensions-4.13.0-py3-none-any.whl", hash = "sha256:c8dd92cc0d6425a97c18fbb9d1954e5ff92c1ca881a309c45f06ebc0b79058e5", size = 45683 },
+    { url = "https://files.pythonhosted.org/packages/df/c5/e7a0b0f5ed69f94c8ab7379c599e6036886bffcde609969a5325f47f1332/typing_extensions-4.13.1-py3-none-any.whl", hash = "sha256:4b6cf02909eb5495cfbc3f6e8fd49217e6cc7944e145cdda8caa3734777f9e69", size = 45739 },
 ]
 
 [[package]]
