@@ -4,6 +4,7 @@ from markupy.tag import Code
 
 class CodeComponent(Component):
     def __init__(self, code: str) -> None:
+        super().__init__()
         self.code = code
 
     def render(self) -> View:
