@@ -2,7 +2,7 @@ from flask import url_for
 from markupsafe import Markup
 from markupy import Component, View
 from markupy import __version__ as markupy_version
-from markupy.tag import (
+from markupy.elements import (
     H1,
     A,
     Body,

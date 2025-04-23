@@ -22,13 +22,13 @@ def convert():
     format_output = bool(request.form.get("format"))
     use_selector = bool(request.form.get("selector"))
     use_dict = not bool(request.form.get("attr"))
-    use_import_tag = not bool(request.form.get("import"))
+    use_import_el = not bool(request.form.get("import"))
     try:
         markupy_str = html2markupy(
             html_str,
             use_selector=use_selector,
             use_dict=use_dict,
-            use_import_tag=use_import_tag,
+            use_import_el=use_import_el,
         )
     except Exception as e:
         return ErrorComponent(message=str(e))

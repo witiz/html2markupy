@@ -1,5 +1,5 @@
 from markupy import Component, View
-from markupy.tag import Code
+from markupy.elements import Code
 
 
 class CodeComponent(Component):

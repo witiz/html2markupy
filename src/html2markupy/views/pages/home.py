@@ -2,7 +2,7 @@ from typing import override
 
 from flask import url_for
 from markupy import Fragment, View
-from markupy.tag import (
+from markupy.elements import (
     A,
     Button,
     Div,
@@ -57,10 +57,10 @@ class HomePage(BaseLayout):
             ],
             Form(
                 "#form",
-                hxPost=url_for("convert"),
-                hxTarget="#markupy",
-                hxSwap="innerHTML",
-                hxTrigger="load, submit, change from:input",
+                hx_post=url_for("convert"),
+                hx_target="#markupy",
+                hx_swap="innerHTML",
+                hx_trigger="load, submit, change from:input",
             )[
                 Div(".grid")[
                     Textarea(
@@ -73,7 +73,7 @@ class HomePage(BaseLayout):
                     )[default_html],
                     Pre(
                         "#markupy",
-                        hxOn__htmx__afterSettle="Prism.highlightAll();",
+                        {"hx-on:htmx:after-settle": "Prism.highlightAll();"},
                     )["...and the markupy equivalent will appear here."],
                 ],
                 Div(".grid")[

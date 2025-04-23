@@ -1,5 +1,5 @@
 from markupy import Component, View
-from markupy.tag import Span
+from markupy.elements import Span
 
 
 class ErrorComponent(Component):
