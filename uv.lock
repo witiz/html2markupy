@@ -164,15 +164,15 @@ wheels = [
 
 [[package]]
 name = "markupy"
-version = "2.0.0"
+version = "2.3.1"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "markupsafe" },
     { name = "typing-extensions" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/f7/87/e3d44922e347b6926ae75add56b3a9e9ed1524845e4dbe57122f60af933e/markupy-2.0.0.tar.gz", hash = "sha256:4096ca569eda5bab9e767249d244f5420bce9a7d24cc0f1d9e59e3b57a0aee7f", size = 86714 }
+sdist = { url = "https://files.pythonhosted.org/packages/c5/2a/f730a659e95ad27145365460adc17382171cc8e21c92f53c39a353b774d2/markupy-2.3.1.tar.gz", hash = "sha256:3bd655a51551334a464fd17d4b2221f3249f4ff09db97a28484257584211f9bc", size = 92137 }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/17/15/813f43311b1a2c1c2beb84d1cb497aaad275d1605c2d87b2b42cec6d3fb8/markupy-2.0.0-py3-none-any.whl", hash = "sha256:a15db496d879bccc852f2ce19b95cab625823a76b6a5983857146eb9041f9b37", size = 19126 },
+    { url = "https://files.pythonhosted.org/packages/79/69/834f54a3deaf82dcf48ad3a2c6c0b58de40e6d6ca61449aeb481fd8c4fca/markupy-2.3.1-py3-none-any.whl", hash = "sha256:efc46060bed24f635021dffddadde9086da0ff4399be7ef197341cbb6fb1fec5", size = 23896 },
 ]
 
 [[package]]
@@ -204,11 +204,11 @@ wheels = [
 
 [[package]]
 name = "platformdirs"
-version = "4.3.7"
+version = "4.3.8"
 source = { registry = "https://pypi.org/simple" }
-sdist = { url = "https://files.pythonhosted.org/packages/b6/2d/7d512a3913d60623e7eb945c6d1b4f0bddf1d0b7ada5225274c87e5b53d1/platformdirs-4.3.7.tar.gz", hash = "sha256:eb437d586b6a0986388f0d6f74aa0cde27b48d0e3d66843640bfb6bdcdb6e351", size = 21291 }
+sdist = { url = "https://files.pythonhosted.org/packages/fe/8b/3c73abc9c759ecd3f1f7ceff6685840859e8070c4d947c93fae71f6a0bf2/platformdirs-4.3.8.tar.gz", hash = "sha256:3d512d96e16bcb959a814c9f348431070822a6496326a4be0911c40b5a74c2bc", size = 21362 }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/6d/45/59578566b3275b8fd9157885918fcd0c4d74162928a5310926887b856a51/platformdirs-4.3.7-py3-none-any.whl", hash = "sha256:a03875334331946f13c549dbd8f4bac7a13a50a895a0eb1e8c6a8ace80d40a94", size = 18499 },
+    { url = "https://files.pythonhosted.org/packages/fe/39/979e8e21520d4e47a0bbe349e2713c0aac6f3d853d0e5b34d76206c439aa/platformdirs-4.3.8-py3-none-any.whl", hash = "sha256:ff7059bb7eb1179e2685604f4aaf157cfd9535242bd23742eadc3c13542139b4", size = 18567 },
 ]
 
 [[package]]

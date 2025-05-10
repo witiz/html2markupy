@@ -1,7 +1,7 @@
 import black
 from black.parsing import InvalidInput as BlackInvalidInput
 from flask import request
-from markupy import html2markupy
+from markupy import html_to_markupy
 
 from .flask import MarkupyFlask
 from .views.components.code import CodeComponent
@@ -24,7 +24,7 @@ def convert():
     use_dict = not bool(request.form.get("attr"))
     use_import_el = not bool(request.form.get("import"))
     try:
-        markupy_str = html2markupy(
+        markupy_str = html_to_markupy(
             html_str,
             use_selector=use_selector,
             use_dict=use_dict,
