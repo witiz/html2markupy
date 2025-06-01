@@ -1,7 +1,8 @@
+from importlib.metadata import version
+
 from flask import url_for
 from markupsafe import Markup
 from markupy import Component, View
-from markupy import __version__ as markupy_version
 from markupy.elements import (
     H1,
     A,
@@ -89,9 +90,11 @@ class BaseLayout(Component):
             ],
         ]
 
-    def main(self) -> View: ...
+    def main(self) -> View:
+        return View()
 
     def footer(self) -> View:
+        markupy_version = version("markupy")
         return Small[
             "Powered by ",
             A(href="https://github.com/witiz/markupy", target="_blank")[
